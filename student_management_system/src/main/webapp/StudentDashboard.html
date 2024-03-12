@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentDashboard</title>
+    <style>
+        body {
+            display: flex;
+            background-image: url('https://img.freepik.com/free-photo/book-laptop-pencil-clock-wooden-table-library-education-learning-concept_1150-16627.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            margin: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            padding: 20px;
+            background-color: #fff; 
+            border-radius: 5px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            margin: 10px;
+            width: 150px;
+            height: 40px;
+            font-size: 12px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form action="StudentDashboard">
+        <a ><button name="find" value="finddetails">Find Student Details</button></a>
+        <br>
+        <a ><button name="update" value="updatedetails">Update Student Details</button></a>
+        <br>
+        <a><button name="logout" value="logoutdetails">Logout</button></a>
+        <br>
+    </form>
+</body>
+</html>

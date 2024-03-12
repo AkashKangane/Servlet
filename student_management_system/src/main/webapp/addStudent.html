@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Student</title>
+<style>
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f5f5f5;
+	background:
+		url('https://us.123rf.com/450wm/darialukoiko/darialukoiko2109/darialukoiko210900247/174830807-notepad-exercise-book-and-pen-on-the-desk-mock-up-in-copy-space-office-on-white-background-back-to.jpg')
+		no-repeat center center fixed;
+	background-size: cover;
+}
+
+form {
+	border: 1px solid #ccc;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 40%;
+	max-width: 300px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="password"]
+	{
+	width: 100%;
+	padding: 2px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	box-sizing: border-box;
+}
+
+input[type="radio"] {
+	margin-right: 5px;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 2px 5px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+</style>
+</head>
+<body>
+	<form action="AddStudent">
+		<label for="id_name">Student name:</label> <input type="text"
+			name="name" id="id_name"> <br> <label for="id_contact">Student
+			contact:</label> <input type="number" name="contact" id="id_contact">
+		<br> <label for="id_address">Student address:</label> <input
+			type="text" name="address" id="id_address"> <br> <label
+			for="gender">Gender:</label> <input type="radio" name="gender"
+			id="id_male" value="Male"> <label for="id_male">Male</label>
+
+		<input type="radio" name="gender" id="id_female" value="Female">
+		<label for="id_female">Female</label> <br> <label for="id_branch">Student
+			branch:</label> <input type="text" name="branch" id="id_branch"> <br>
+
+		<label for="id_email">Student email:</label> <input type="email"
+			name="email" id="id_email"> <br> <label
+			for="id_password">Student password:</label> <input type="password"
+			name="password" id="id_password"> <br> <input
+			type="submit" name="submit" value="Submit"> <a
+			href="AdminDashboard.html"><button name="logout"
+				value="logoutdetails">Cancel</button></a>
+	</form>
+</body>
+</html>
